@@ -6,10 +6,10 @@ import { BRANDS_SEED } from './data/brands.seed';
 
 @Injectable()
 export class SeedService {
-
-  constructor(private readonly carsService: CarsService, private readonly brandsService: BrandsService) {
-
-  }
+  constructor(
+    private readonly carsService: CarsService,
+    private readonly brandsService: BrandsService,
+  ) {}
 
   populateDB() {
     this.carsService.fillCarsWithSeedData(CARS_SEED);

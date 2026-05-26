@@ -11,8 +11,8 @@ async function bootstrap() {
     new ValidationPipe({
       whitelist: true, // solo deja la data que estoy esperando
       forbidNonWhitelisted: true, // muestra un mensaje de error con las propiedades que no se necesitan
-    })
-  )
+    }),
+  );
 
   await app.listen(process.env.PORT ?? 3000);
 }
